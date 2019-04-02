@@ -1,0 +1,65 @@
+{
+  "properties": {
+    "parameters": {
+      "localVNETpeeredwithhubVNET_vnetName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "vnetName (Local VNET peered with hub VNET)",
+          "description": "VNet name"
+        },
+        "allowedValues": []
+      },
+      "localVNETpeeredwithhubVNET_vnetAddressPrefix": {
+        "type": "string",
+        "metadata": {
+          "displayName": "vnetAddressPrefix (Local VNET peered with hub VNET)",
+          "description": "VNET Address prefix"
+        },
+        "defaultValue": "192.168.0.0/16",
+        "allowedValues": []
+      },
+      "localVNETpeeredwithhubVNET_subnet1Prefix": {
+        "type": "string",
+        "metadata": {
+          "displayName": "subnet1Prefix (Local VNET peered with hub VNET)",
+          "description": "Local Subnet prefix"
+        },
+        "defaultValue": "192.168.254.0/24",
+        "allowedValues": []
+      },
+      "localVNETpeeredwithhubVNET_subnet2Prefix": {
+        "type": "string",
+        "metadata": {
+          "displayName": "subnet2Prefix (Local VNET peered with hub VNET)",
+          "description": "Local Subnet Prefix"
+        },
+        "defaultValue": "192.168.253.0/24",
+        "allowedValues": []
+      },
+      "localVNETpeeredwithhubVNET_SubRGName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "SubRGName (Local VNET peered with hub VNET)",
+          "description": "Local Subnet Prefix"
+        },
+        "defaultValue": "hubResourceGroup",
+        "allowedValues": []
+      }
+    },
+    "resourceGroups": {
+      "ResourceGroup": {
+        "metadata": {
+          "displayName": "Network"
+        },
+        "dependsOn": []
+      }
+    },
+    "targetScope": "subscription",
+    "status": {
+      "timeCreated": "2019-04-02T22:16:16+02:00",
+      "lastModified": "2019-04-02T22:16:17+02:00"
+    },
+    "description": "Local VNET peered with corporate VNET"
+  },
+  "type": "Microsoft.Blueprint/blueprints"
+}
