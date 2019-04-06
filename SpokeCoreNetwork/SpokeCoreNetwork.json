@@ -1,0 +1,55 @@
+{
+  "properties": {
+    "parameters": {
+      "spokeNetworkARMresources_vnetName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "vnetName (SpokeNetwork ARM resources)",
+          "description": "VNet name"
+        },
+        "allowedValues": []
+      },
+      "spokeNetworkARMresources_vnetAddressPrefix": {
+        "type": "string",
+        "metadata": {
+          "displayName": "vnetAddressPrefix (SpokeNetwork ARM resources)",
+          "description": "VNET Address prefix"
+        },
+        "defaultValue": "192.168.0.0/16",
+        "allowedValues": []
+      },
+      "spokeNetworkARMresources_subnet1Prefix": {
+        "type": "string",
+        "metadata": {
+          "displayName": "subnet1Prefix (SpokeNetwork ARM resources)",
+          "description": "Local Subnet prefix"
+        },
+        "defaultValue": "192.168.254.0/24",
+        "allowedValues": []
+      },
+      "spokeNetworkARMresources_subnet2Prefix": {
+        "type": "string",
+        "metadata": {
+          "displayName": "subnet2Prefix (SpokeNetwork ARM resources)",
+          "description": "Local Subnet Prefix"
+        },
+        "defaultValue": "192.168.253.0/24",
+        "allowedValues": []
+      }
+    },
+    "resourceGroups": {
+      "ResourceGroup": {
+        "metadata": {
+          "displayName": "CoreNetwork RG"
+        },
+        "dependsOn": []
+      }
+    },
+    "targetScope": "subscription",
+    "status": {
+      "timeCreated": "2019-04-06T17:37:59+02:00",
+      "lastModified": "2019-04-06T17:37:59+02:00"
+    }
+  },
+  "type": "Microsoft.Blueprint/blueprints"
+}
